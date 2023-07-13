@@ -20,19 +20,20 @@ curl -sSL https://install.python-poetry.org | python3 -
 
 ```bash
 poetry new api-demo
+cd api-demo
 ```
 
-- On installe la librairie openapi
+- On récupère la librairie java openapi
 
 ```bash
-poetry add openapi-python-client
+wget https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/6.6.0/openapi-generator-cli-6.6.0.jar -O openapi-generator-cli.jar
 ```
 
 
 - On génère le client openapi à partir de l'url du fichier de description de l'api openapi
 
 ```bash
-poetry run openapi-python-client generate --url https://pegase-swagger-ui.dev.pc-scol.fr/fr.pcscol.ins.api/ins-gestion-api-v5/ins-gestion-api-v5-20.0.0.yaml
+java -jar openapi-generator-cli.jar generate -g python -c python-gen-config.json -i https://pegase-swagger-ui.dev.pc-scol.fr/fr.pcscol.ins.api/ins-gestion-api-v5/ins-gestion-api-v5-20.0.0.yaml -o generated/ins-gestion --package-name ins-gestion-client
 ```
 
 
