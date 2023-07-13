@@ -29,6 +29,14 @@ cd api-demo
 wget https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/6.6.0/openapi-generator-cli-6.6.0.jar -O openapi-generator-cli.jar
 ```
 
+- On ajoute un fichier de conf pour openapi appelé **python-gen-config.json**
+
+```js
+{
+  "pythonAttrNoneIfUnset": true
+}
+```
+
 
 - On génère le client openapi à partir de l'url du fichier de description de l'api openapi
 
