@@ -9,6 +9,7 @@ packages = [{include = "api_demo"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 openapi-python-client = "^0.14.1"
+ins-gestion-client = {path = "generated/ins-gestion"}
 
 
 [build-system]
