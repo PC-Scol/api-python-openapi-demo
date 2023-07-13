@@ -28,6 +28,14 @@ poetry new api-demo
 poetry add openapi-python-client
 ```
 
+
+- On génère le client openapi à partir de l'url du fichier de description de l'api openapi
+
+```bash
+poetry run openapi-python-client generate --url https://pegase-swagger-ui.dev.pc-scol.fr/fr.pcscol.ins.api/ins-gestion-api-v5/ins-gestion-api-v5-20.0.0.yaml
+```
+
+
 - On crée un script **api_demo/main.py**, on lui donne les droits d'exécution et on teste
 
 
@@ -47,8 +55,3 @@ chmod +x api_demo/main.py
 poetry run api_demo/main.py
 ```
 
-- On génère le client openapi à partir de l'url du fichier de description de l'api openapi
-
-```bash
-poetry run openapi-python-client generate --url https://pegase-swagger-ui.dev.pc-scol.fr/fr.pcscol.ins.api/ins-gestion-api-v5/ins-gestion-api-v5-20.0.0.yaml
-```
