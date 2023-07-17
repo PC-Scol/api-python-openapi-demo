@@ -1,7 +1,7 @@
-# Utiliser le client openapi pour python
+# Utiliser un client openapi pour python
 
-Exemple d'utilisation du client openapi pour python.\
-On utilise swagger-codegen plutôt que openapi-generator car, pour le moment, celui-ci génére du code avec des erreurs. 
+Exemple d'utilisation d'un client openapi pour python.\
+On utilise **swagger-codegen** plutôt que **openapi-generator** car, pour le moment, celui-ci génère du code avec des erreurs. 
 
 
 ## Prise en main APIs Swagger :
