@@ -102,7 +102,7 @@ def auth_settings(self):
                     'key': 'Authorization',
                     'value': self.get_api_key_with_prefix('Authorization')
                 },
-        }^
+        }
 swagger_client.Configuration.auth_settings = auth_settings
 
 # Création de l'instance de l'API
