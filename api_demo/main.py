@@ -4,8 +4,8 @@ from __future__ import print_function
 import os
 from pprint import pprint
 
-import swagger_client
-from swagger_client.rest import ApiException
+import swagger_client  # type: ignore
+from swagger_client.rest import ApiException  # type: ignore
 
 # Configuration de l'url et de l'authentification
 configuration = swagger_client.Configuration()

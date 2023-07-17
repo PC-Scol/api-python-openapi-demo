@@ -10,6 +10,8 @@ packages = [{include = "api_demo"}]
 python = "^3.11"
 openapi-python-client = "^0.14.1"
 swagger-client = {path = "generated/ins-gestion"}
+mypy = "^1.4.1"
+ruff = "^0.0.278"
 
 
 [build-system]
